@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
@@ -8,6 +9,7 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <div className="App container">
+    <ScrollToTop />
     <Header />
       <Routes>
         <Route path="/" exact element={<Home />} />

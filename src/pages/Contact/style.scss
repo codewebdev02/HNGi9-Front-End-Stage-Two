@@ -1,7 +1,7 @@
 .contact {
-    // border: 1px solid red;
     max-width: 720px;
     margin: auto;
+    margin-top: 6px;
 
     .title {
         h2 {
@@ -11,6 +11,7 @@
             letter-spacing: -0.02em;
             color: #101828;
             margin: 0;
+            margin-bottom: 6px;
         }
 
         p {
@@ -19,6 +20,11 @@
             line-height: 30px;
             color: #475467;
             margin: 0;
+
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
         }
     }
 
@@ -37,6 +43,10 @@
 
                 label {
                     width: 100%;
+                }
+
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
                 }
             }
 
@@ -67,6 +77,10 @@
                         font-size: 16px;
                         line-height: 24px;
                         color: #667085;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        max-width: 100%;
                     }
                 }
 
