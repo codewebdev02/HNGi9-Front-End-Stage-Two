@@ -1,3 +1,10 @@
+# This new repo is the continuation of the stage 1 task. 
+
+# Github repo link to the stage 1 task is 
+# https://github.com/codewebdev02/Front-End-Stage-1-Task
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
