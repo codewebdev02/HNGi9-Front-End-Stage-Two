@@ -18,7 +18,7 @@ export default function Contact() {
                     <input type="text" id="first_name" placeholder="Enter your first name " />
                 </label>
                 <label htmlFor="Last name">First name
-                    <input type="text" id="last_name" placeholder="Enter your last name" />
+                    <input type="text" id="last_name" placeholder="Enter your last name " />
                 </label>
             </div>
             <label htmlFor="Email">Email
