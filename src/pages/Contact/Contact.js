@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="form-input-container">
             <div className="form-field">
                 <label htmlFor="First name">First name
-                    <input type="text" id="first_name" placeholder="Enter your first name" />
+                    <input type="text" id="first_name" placeholder="Enter your first name " />
                 </label>
                 <label htmlFor="Last name">First name
                     <input type="text" id="last_name" placeholder="Enter your last name" />
