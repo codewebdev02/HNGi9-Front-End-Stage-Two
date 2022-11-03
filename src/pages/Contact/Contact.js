@@ -22,10 +22,10 @@ export default function Contact() {
                 </label>
             </div>
             <label htmlFor="Email">Email
-                <input type="text" id="email" placeholder="yourname@email.com " />
+                <input type="email" id="email" placeholder="yourname@email.com " />
             </label>
             <label htmlFor="Message">Message
-                <textarea id="message" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+                <textarea id="message" placeholder="Send me a message and I'll reply you as soon as possible... "></textarea>
             </label>
         </div>
         <div className="form_footer">
