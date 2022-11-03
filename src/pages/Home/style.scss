@@ -1,0 +1,103 @@
+.home {
+    .profileDetails {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .profileImg {
+            margin-bottom: 16px;
+        }
+
+        #profile__img {
+            border-radius: 50%;
+            width: 96px;
+            height: 96px;
+        }
+
+        #twitter,
+        #slack {
+            margin: 0px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        #slack {
+            visibility: hidden;
+        }
+    }
+
+    .link-section {
+        max-width: 1216px;
+        margin: auto;
+
+        #btn__zuri,
+        #books,
+        #book__python,
+        #pitch,
+        #book__design,
+        #contact {
+            padding-left: 44px;
+            padding-right: 44px;
+            min-height: 56px;
+            display: block;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            border-radius: 14px;
+            justify-content: center;
+            background-color: #EAECF0;
+            font-size: 18px;
+            color: #101828;
+            font-weight: 500;
+            margin-bottom: 15px;
+            transition: transform .5s;
+        }
+
+        a {
+            &:hover {
+                transform: scale(1.05) !important;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    .tooltiptext {
+        visibility: hidden;
+        max-width: 300px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 80%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 0px;
+            left: 50%;
+            top: 5px;
+            border: 8px solid transparent;
+            border-top: 0;
+            border-bottom: 8px solid #000000;
+            transform: translate(-50%, calc(-100% - 5px));
+        }
+    }
+
+    &:hover .tooltiptext {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,163 @@
+.contact {
+    // border: 1px solid red;
+    max-width: 720px;
+    margin: auto;
+
+    .title {
+        h2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            color: #101828;
+            margin: 0;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #475467;
+            margin: 0;
+        }
+    }
+
+    form {
+        margin-top: 48px;
+
+        .form-input-container {
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+
+            .form-field {
+                width: 100%;
+                display: flex;
+                gap: 24px;
+
+                label {
+                    width: 100%;
+                }
+            }
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #344054;
+                display: flex;
+                flex-direction: column;
+
+                #first_name,
+                #last_name,
+                #email,
+                #message {
+                    max-width: 348px;
+                    padding: 10px 14px;
+                    height: 44px;
+                    background: #FFFFFF;
+                    border: 1px solid #D0D5DD;
+                    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                    border-radius: 8px;
+                    outline: none;
+                    margin-top: 6px;
+
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #667085;
+                    }
+                }
+
+                #email {
+                    max-width: 720px;
+                }
+
+                #message {
+                    padding: 12px 14px;
+                    max-width: 720px;
+                    height: 132px;
+                    resize: none;
+                }
+            }
+        }
+
+        .form_footer {
+            margin-top: 26px;
+
+            .agree {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #475467;
+
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+
+                    &:checked~.checkmark {
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #FFFFFF;
+                    border: 1px solid #D0D5DD;
+                    border-radius: 6px;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        left: 7px;
+                        top: 3px;
+                        width: 4px;
+                        height: 9px;
+                        border: solid #2196F3;
+                        border-width: 0 2px 2px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            #btn__submit {
+                margin-top: 32px;
+                padding: 12px 20px;
+                width: 100%;
+                height: 48px;
+                background: #1570EF;
+                border: 1px solid #1570EF;
+                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+}

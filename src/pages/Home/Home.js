@@ -60,7 +60,7 @@ export default function Home() {
             could you get you disqualified.
           </span>
         </div>
-        <Link to="/contact" id="book__design">
+        <Link to="/contact" id="contact">
           Contact
         </Link>
       </div>
