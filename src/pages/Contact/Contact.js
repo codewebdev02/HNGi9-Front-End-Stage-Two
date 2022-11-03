@@ -33,7 +33,7 @@ export default function Contact() {
                 <input type="checkbox" />
                 <span className="checkmark"></span>
             </label>
-            <button type="submit" id="btn__submit">Send message</button>
+            <button type="submit" id="btn__submit">Send message </button>
         </div>
       </form>
     </div>
