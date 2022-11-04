@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./style.scss";
 
 export default function Home() {
@@ -60,9 +59,9 @@ export default function Home() {
             could you get you disqualified.
           </span>
         </div>
-        <Link to="/contact" id="contact">
+        <a href="/contact" id="contact">
           Contact
-        </Link>
+        </a>
       </div>
     </div>
   );
