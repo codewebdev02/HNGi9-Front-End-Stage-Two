@@ -15,17 +15,17 @@ export default function Contact() {
         <div className="form-input-container">
             <div className="form-field">
                 <label htmlFor="First name">First name
-                    <input type="text" id="first_name" placeholder="Enter your first name " />
+                    <input type="text" id="first_name" placeholder="Enter your first name " required />
                 </label>
                 <label htmlFor="Last name">First name
-                    <input type="text" id="last_name" placeholder="Enter your last name " />
+                    <input type="text" id="last_name" placeholder="Enter your last name " required />
                 </label>
             </div>
             <label htmlFor="Email">Email
-                <input type="email" id="email" placeholder="yourname@email.com " />
+                <input type="email" id="email" placeholder="yourname@email.com " required />
             </label>
             <label htmlFor="Message">Message
-                <textarea id="message" placeholder="Send me a message and I'll reply you as soon as possible... "></textarea>
+                <textarea id="message" placeholder="Send me a message and I'll reply you as soon as possible... " required></textarea>
             </label>
         </div>
         <div className="form_footer">
